@@ -1,0 +1,14 @@
+{
+    "name": "nathan/cook_master_2a3",
+    "authors": [
+        {
+            "name": "nathan"
+        }
+    ],
+    "require": {},
+    "autoload":{
+        "psr-4":{
+            "Classes\\": "Classes/"
+        }
+    }
+}
