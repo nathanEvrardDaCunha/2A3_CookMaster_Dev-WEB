@@ -1,0 +1,207 @@
+body{
+	width: 100%;
+	margin: 0px;
+	font-family: 'Roboto', sans-serif;
+
+}
+
+/* MAIN COLORS 
+
+
+FOND :
+
+#F2F2F2
+
+
+
+
+#C6E0E0
+
+*/
+
+
+
+/* PAGE HOME_NOT LOGGED -> */
+
+
+#accueilImg{
+	width: 100%;
+}
+
+
+
+
+
+.containerCategories{
+	margin-left: auto;
+	margin-right: auto;
+	display: flex;
+	width: 1100px;
+	align-items: flex-start;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+
+.elementCategories{
+	width: 250px;
+	text-align: center;
+	height: 350px;
+	flex-direction: column;
+	display: inline-block;
+	justify-content: space-evenly;
+	align-items: flex-start;
+	margin-top: 40px;
+	margin-bottom: 20px;
+	margin-left: 40px;
+	margin-right: 40px;
+
+}
+
+.categoriesText{
+	font-family: 'Roboto', sans-serif;
+	font-size: 1.2em;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.categoriesTitle{
+	font-size: 1.6em;
+	margin: 5px;
+	font-family: 'Roboto', sans-serif;
+}
+
+
+
+.containerSubscription{
+	/*border-top: 1px solid black;*/
+	padding-top: 80px;
+	display: flex;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 40px;
+	justify-content: space-evenly;
+	height: 600px;
+	width: 100%;
+}
+
+.elementSubscription{
+	border-radius: 10px;
+	text-align: center;
+	height: 600px;
+	width: 300px;
+	background-color: #d9d9d9;
+	transition: transform .2s;
+
+}
+
+
+.elementSubscription:hover{
+	transform: scale(1.050); 
+}
+
+.elementSubscription:nth-child(1):hover{
+	-webkit-box-shadow: 5px 5px 15px 5px 
+	  rgba(217,217,217,0.3), 
+	  -9px 5px 15px 5px rgba(217,217,217,0.3), 
+	  -7px -5px 15px 5px rgba(217,217,217,0.3), 
+	  12px -5px 15px 5px rgba(217,217,217,0.3), 
+	  12px 10px 15px 7px rgba(217,217,217,0.3), 
+	  -10px 10px 15px 7px rgba(217,217,217,0.3), 
+	  -10px -7px 27px 1px rgba(217,217,217,0.3), 
+	  5px 5px 0px 7px rgba(217,217,217,0.3); 
+	box-shadow: 5px 5px 15px 5px rgba(217,217,217,0.3), 
+	-9px 5px 15px 5px rgba(217,217,217,0.1), 
+	-7px -5px 15px 5px rgba(217,217,217,0.1),
+	  12px -5px 15px 5px rgba(217,217,217,0.1), 
+	  12px 10px 15px 7px rgba(217,217,217,0.1), 
+	  -10px 10px 15px 7px rgba(217,217,217,0.1), 
+	  -10px -7px 27px 1px rgba(217,217,217,0.1), 
+	  5px 5px 0px 7px rgba(217,217,217,0.1)
+}
+
+.elementSubscription:nth-child(2):hover{
+	-webkit-box-shadow: 5px 5px 15px 5px 
+	  rgba(140,237,216,0.3), 
+	  -9px 5px 15px 5px rgba(140,237,216,0.3), 
+	  -7px -5px 15px 5px rgba(140,237,216,0.3), 
+	  12px -5px 15px 5px rgba(140,237,216,0.3), 
+	  12px 10px 15px 7px rgba(140,237,216,0.3), 
+	  -10px 10px 15px 7px rgba(140,237,216,0.3), 
+	  -10px -7px 27px 1px rgba(140,237,216,0.3), 
+	  5px 5px 0px 7px rgba(140,237,216,0.3); 
+	box-shadow: 5px 5px 15px 5px rgba(140,237,216,0.3), 
+	-9px 5px 15px 5px rgba(140,237,216,0.1), 
+	-7px -5px 15px 5px rgba(140,237,216,0.1),
+	  12px -5px 15px 5px rgba(140,237,216,0.1), 
+	  12px 10px 15px 7px rgba(140,237,216,0.1), 
+	  -10px 10px 15px 7px rgba(140,237,216,0.1), 
+	  -10px -7px 27px 1px rgba(140,237,216,0.1), 
+	  5px 5px 0px 7px rgba(140,237,216,0.1);
+
+}
+
+.elementSubscription:nth-child(3):hover{
+	-webkit-box-shadow: 5px 5px 15px 5px 
+	  rgba(237,233,40,0.3), 
+	  -9px 5px 15px 5px rgba(237,233,40,0.3), 
+	  -7px -5px 15px 5px rgba(237,233,40,0.3), 
+	  12px -5px 15px 5px rgba(237,233,40,0.3), 
+	  12px 10px 15px 7px rgba(237,233,40,0.3), 
+	  -10px 10px 15px 7px rgba(237,233,40,0.3), 
+	  -10px -7px 27px 1px rgba(237,233,40,0.3), 
+	  5px 5px 0px 7px rgba(237,233,40,0.3); 
+	box-shadow: 5px 5px 15px 5px rgba(237,233,40,0.3), 
+	-9px 5px 15px 5px rgba(237,233,40,0.1), 
+	-7px -5px 15px 5px rgba(237,233,40,0.1),
+	  12px -5px 15px 5px rgba(237,233,40,0.1), 
+	  12px 10px 15px 7px rgba(237,233,40,0.1), 
+	  -10px 10px 15px 7px rgba(237,233,40,0.1), 
+	  -10px -7px 27px 1px rgba(237,233,40,0.1), 
+	  5px 5px 0px 7px rgba(237,233,40,0.1);
+
+}
+
+.elementSubscription ul{
+	text-align: left;
+	width: 250px;
+	padding-right: 10px;
+	font-size: 0.9em;
+	margin-top: 25px;
+}
+
+
+
+.subscriptionTitle{
+	font-size: 1.6em;
+	margin: 5px;
+	font-family: 'Roboto', sans-serif;
+}
+
+
+.elementSubscription li{
+	list-style-type: none;
+	text-indent: -5px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+
+.elementSubscription li:before {
+	content: '-';
+}
+
+
+.elementSubscription strong{
+	color: #d59924;
+}
+
+
+
+.containerMobileApp{
+	background: #C6E0E0;
+	height: 350px;
+	width: 100%;
+}
+
+/* <- *
