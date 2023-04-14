@@ -2,9 +2,9 @@
     "name": "nath/cook-master_dev-web",
     "require": {},
     "autoload":{
-        "psr-4":{
-            "Classes\\": "Classes/",
-            "Exceptions\\": "Exceptions/"
+        "psr-4": {
+            "Exceptions\\": "Exceptions/",
+            "Router\\": "Router/"
         }
-    }
+    }    
 }
