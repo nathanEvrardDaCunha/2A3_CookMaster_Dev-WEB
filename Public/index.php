@@ -19,15 +19,15 @@ $router = new Router();
 echo "1";
 
 
-/*$router->register('/', function(){
+$router->register('/', function(){
     return 'HomePage';
-});*/
+});
 
-/*$router->register('/contact', function(){
+$router->register('/contact', function(){
     return 'ContactPage';
-});*/
+});
 
 echo "2";
 echo "\n" . __DIR__ . "/../Router/Router.php";
 
-//echo $router->resolve($_SERVER['REQUEST_URI']);
+echo $router->resolve($_SERVER['REQUEST_URI']);
