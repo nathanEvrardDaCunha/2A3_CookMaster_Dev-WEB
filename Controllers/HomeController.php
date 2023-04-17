@@ -2,12 +2,16 @@
 
 namespace Controllers;
 
+use Models\UsersModel;
 use Source\Renderer;
 
 class HomeController
 {
     public function index(): Renderer
     {
-        return Renderer::make('home/index');
+        $userModel = new UsersModel();
+        $users = $userModel->all(); 
+
+        return Renderer::make('home/index', compact('users'));
     }
 }

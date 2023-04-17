@@ -8,5 +8,11 @@
 </head>
 <body>
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, tenetur. Amet, earum illum minima obcaecati nesciunt eveniet alias quos saepe. Blanditiis similique quod eum corrupti vitae iusto, nulla ut suscipit?</p>
+
+    <ul>
+        <?php foreach($users as $user): ?>
+            <li><?= $user->nom ?></li>
+        <?php endforeach ?>
+    </ul>
 </body>
 </html>

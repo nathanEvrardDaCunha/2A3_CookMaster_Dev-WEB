@@ -1,5 +1,6 @@
 <?php
 
+use Source\App;
 use Router\Router;
 
 require __DIR__ . "/../vendor/autoload.php";
@@ -14,8 +15,7 @@ $router->register('/', ['Controllers\HomeController', 'index']);
     return 'ContactPage';
 });*/
 
-try{
-    echo $router->resolve($_SERVER['REQUEST_URI']);
-} catch (Exception $e){
-    echo $e->getMessage();
-}
+/**/
+
+(new App($router, $_SERVER['REQUEST_URI']))->run();
+

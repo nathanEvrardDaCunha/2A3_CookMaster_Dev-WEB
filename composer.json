@@ -6,7 +6,8 @@
             "Exceptions\\": "Exceptions/",
             "Router\\": "Router/",
             "Controllers\\": "Controllers/",
-            "Source\\": "src/"
+            "Source\\": "src/",
+            "Models\\": "Models/"
         }
     }    
 }
