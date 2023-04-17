@@ -5,7 +5,8 @@
         "psr-4": {
             "Exceptions\\": "Exceptions/",
             "Router\\": "Router/",
-            "Controllers\\": "Controllers/"
+            "Controllers\\": "Controllers/",
+            "Source\\": "src/"
         }
     }    
 }
