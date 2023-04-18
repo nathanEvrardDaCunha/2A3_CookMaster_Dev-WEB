@@ -13,8 +13,6 @@ class Renderer
 
         extract($this->params);
 
-        var_dump($this->params);
-
         require BASE_VIEW_PATH . $this->viewPath . '.php';
 
         return ob_get_clean();

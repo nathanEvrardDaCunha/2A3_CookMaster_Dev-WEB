@@ -13,15 +13,25 @@ class Router
         var_dump($this->routes);
     }
 
-    public function register(string $path, callable|array $action): void
+    public function register(string $path, callable|array $action, string $requestMethod): void
     {
-        $this->routes[$path] = $action;
+        $this->routes[$requestMethod][$path] = $action;
     }
 
-    public function resolve(string $uri): mixed
+    public function get(string $path, callable|array $action): void
     {
-        $path = explode('?', $uri)[0];
-        $action = $this->routes[$path] ?? null;
+        $this->register($path, $action, 'GET');
+    }
+
+    public function post(string $path, callable|array $action): void
+    {
+        $this->register($path, $action, 'POST');
+    }
+
+    public function resolve(string $requestUri, string $requestMethod): mixed
+    {
+        $path = explode('?', $requestUri)[0];
+        $action = $this->routes[$requestMethod][$path] ?? null;
 
         
         if(is_callable($action))
