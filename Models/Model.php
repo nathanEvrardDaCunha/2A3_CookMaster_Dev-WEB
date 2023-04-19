@@ -25,6 +25,13 @@ class Model
         return $statement->fetchAll();
     }
 
+    public function selectFromWhereOneArgument(string $column, int|string $value): array
+    {
+        $statement = $this->getPDO()->prepare('SELECT * FROM {$this->table} WHERE {$this->column} = ?');
+        $statement->execute([$value]);
+        return $statement->fetchAll();
+    }
+
     protected function getPDO(): \PDO
     {
         return static::$pdo;
