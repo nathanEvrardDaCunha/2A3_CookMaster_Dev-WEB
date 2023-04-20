@@ -5,6 +5,14 @@ body{
 
 }
 
+
+
+a{
+  text-decoration: none;
+}
+
+
+
 /* MAIN COLORS 
 
 
@@ -273,6 +281,28 @@ FOND :
 
 /*not me*/
 
+
+
+
+
+/* LOGIN & SIGNIN */
+
+  .gradient-custom {
+      background-image: url('../../assets/img/banner.png');
+      background-repeat: repeat;
+      height: 100%;
+      background-size: contain;
+}
+
+
+
+a:hover{
+  transition: .2s;
+  color: #FFA800;
+}
+
+
+/* ------*/
 
 @charset "UTF-8";
 /*!
