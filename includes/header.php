@@ -53,6 +53,7 @@ else {
 
     }
     echo '<a class="log-btn" href="deconnexion.php">Logout</a></li>';
+
     /*METTRE LE PROFIL ICI AVEC NOM UTILISATEUR ET COOKIES DISPONIBLES
 } 
 else {
