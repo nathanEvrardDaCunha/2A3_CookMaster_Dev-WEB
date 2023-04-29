@@ -1,3 +1,7 @@
+<?php
+    //Vous pouvez modifier cette page car c'est principalement du HTML
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>

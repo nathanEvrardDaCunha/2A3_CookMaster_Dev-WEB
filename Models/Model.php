@@ -7,6 +7,7 @@ class Model
     protected static \PDO $pdo;
     protected string $table;
 
+    //Initialise toute la partie "connexion a la BDD" (ne pas toucher)
     public function __construct()
     {
         try{
@@ -19,12 +20,14 @@ class Model
         }
     }
 
+    //Fonction exemple resortant toutes les données d'une BDD
     public function all(): array
     {
         $statement = $this->getPDO()->query("SELECT * FROM {$this->table}");
         return $statement->fetchAll();
     }
 
+    //Fonction exemple comprenant un argument et recherchant des informations dans la BDD a partir de celui-ci
     public function selectFromWhereOneArgument(string $column, int|string $value): array
     {
         $statement = $this->getPDO()->prepare('SELECT * FROM {$this->table} WHERE {$this->column} = ?');
@@ -32,6 +35,7 @@ class Model
         return $statement->fetchAll();
     }
 
+    //Permet d'initialiser PDO pour accéder aux BDD (ne pas toucher)
     protected function getPDO(): \PDO
     {
         return static::$pdo;
