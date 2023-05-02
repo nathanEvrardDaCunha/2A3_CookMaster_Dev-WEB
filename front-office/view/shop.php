@@ -40,6 +40,7 @@
 			<a><li class="list-group-item" data-file="shop-cat-7.php">Accessoires de cuisine</li></a>
 			<a><li class="list-group-item" data-file="shop-cat-8.php">Rangement de cuisine</li></a>
 			<a><li class="list-group-item" data-file="shop-cat-9.php">Livres de recettes et guides de cuisine</li></a>
+			<a href="shop-delivery.php"><li class="list-group-item"><strong>Service de livraison</strong></li></a>
 	    </ul>
 	  </div>
 
