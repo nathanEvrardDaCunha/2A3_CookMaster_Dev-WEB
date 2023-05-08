@@ -6,7 +6,7 @@ namespace Controllers;
 use Models\UsersModel;
 use Source\Renderer;
 
-class HomeController
+class DashboardController
 {
     //Fonction qui doit toujours être présente peu importe le controlleur (ne jamais supprimer)
     public function index(): Renderer
@@ -18,7 +18,7 @@ class HomeController
         //Traitement (appel de fonction dans le controlleur)
 
         //Affichage
-        return Renderer::make('home/index', compact('users'));
+        return Renderer::make('home/dashboard', compact('users'));
     }
 
     //Fonction autres
