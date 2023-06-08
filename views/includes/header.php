@@ -45,7 +45,7 @@
         echo '<a class="log-btn" href="deconnexion.php">Logout</a></li>';
       }
       else {
-        echo '<a class="log-btn" href="connexion.php">Login</a></li>';
+        echo '<a class="log-btn" href="connexion">Login</a></li>';
       } 
     ?>
     </div>

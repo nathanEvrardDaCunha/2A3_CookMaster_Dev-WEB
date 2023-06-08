@@ -22,11 +22,23 @@ $router->get('/events', ['Controllers\EventController', 'index']);
 $router->get('/evenement', ['Controllers\EventController', 'index']);
 $router->get('/evenements', ['Controllers\EventController', 'index']);
 $router->get('/event', ['Controllers\EventController', 'index']);
-$router->get('/cook', ['Controllers\DashboardController', 'index']);
-$router->get('/cuisine', ['Controllers\DashboardController', 'index']);
-$router->get('/cooking', ['Controllers\DashboardController', 'index']);
-$router->get('/services', ['Controllers\DashboardController', 'index']);
-$router->get('/service', ['Controllers\DashboardController', 'index']);
+$router->get('/cook', ['Controllers\CuisineController', 'index']);
+$router->get('/cuisine', ['Controllers\CuisineController', 'index']);
+$router->get('/cooking', ['Controllers\CuisineController', 'index']);
+$router->get('/services', ['Controllers\ServicesController', 'index']);
+$router->get('/service', ['Controllers\ServicesController', 'index']);
+$router->get('/connexion', ['Controllers\LoginController', 'index']);
+$router->get('/login', ['Controllers\LoginController', 'index']);
+$router->get('/register', ['Controllers\RegisterController', 'index']);
+$router->get('/inscription', ['Controllers\RegisterController', 'index']);
+$router->get('/lecon', ['Controllers\LeconsController', 'index']);
+$router->get('/lecons', ['Controllers\LeconsController', 'index']);
+$router->get('/cours', ['Controllers\LeconsController', 'index']);
+$router->get('/administration_utilisateurs', ['Controllers\GestionUController', 'index']);
+$router->get('/administration_utilisateur', ['Controllers\GestionUController', 'index']);
+
+
+
 
 
 
