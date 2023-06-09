@@ -13,7 +13,7 @@
         
         <body>
         <button type="button" class="btn btn-sm mr-2 font-size-16 d-lg-none header-item waves-effect waves-light" data-toggle="collapse" data-target="#topnav-menu-content">
-                        <i class="fa fa-fw fa-bars"></i>
+                        <?php include('assets/css/svg/icon_svg.php');?>
                     </button>
 <!-- Begin page -->
 <div id="layout-wrapper">
@@ -30,13 +30,13 @@
                         <ul class="navbar-nav">
                             <li class="nav-item">
                                 <a class="nav-link" href="dashboard.php" style="color:white;">
-                                    <i class="mdi mdi-home-analytics"></i>Dashboard
+                                    <i class="mdi"><? include('assets/css/svg/dashboard_svg.php');?></i>Dashboard
                                 </a>
                             </li>
                         
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle arrow-none" style="color:rgba(255, 255, 255, 0.5);" href="#" id="topnav-components" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    <i class="mdi mdi-account-edit"></i>Gestion du Profil
+                                    <i class="mdi"><? include('assets/css/svg/profile_svg.php');?></i>Gestion du Profil
                                 </a>
                                 <div class="dropdown-menu" aria-labelledby="topnav-components">
                                     <a href="profile.php" class="dropdown-item">Profil</a>
@@ -48,7 +48,7 @@
 
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle arrow-none" style="color:rgba(255, 255, 255, 0.5);" href="#" id="topnav-pages" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    <i class="mdi mdi-room-service"></i>Services
+                                    <i class="mdi"><? include('assets/css/svg/serv_svg.php');?></i>Services
                                 </a>
                                 <div class="dropdown-menu" aria-labelledby="topnav-pages">
                                     <div class="dropdown">
@@ -74,20 +74,20 @@
 
                             <li class="nav-item">
                               <a class="nav-link" href="messagerie.php" style="color:rgba(255, 255, 255, 0.5);">
-                                  <i class="mdi mdi-email-mark-as-unread"></i>Messagerie
+                              <i class="mdi"><? include('assets/css/svg/messagerie_svg.php');?></i>Messagerie
                               </a>
                             </li>
 
                             <li class="nav-item">
                               <a class="nav-link" href="calendrier.php" style="color:rgba(255, 255, 255, 0.5);">
-                                  <i class="mdi mdi-calendar-month"></i>Calendrier
+                                  <i class="mdi"><? include('assets/css/svg/calendrier_svg.php');?></i>Calendrier
                               </a>
                             </li>
 
 
                             <li class="nav-item dropdown" >
                                 <a class="nav-link dropdown-toggle arrow-none" style="color:rgba(255, 255, 255, 0.5);" href="#" id="topnav-more" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    <i class="mdi mdi-monitor-dashboard"></i>Administration
+                                    <i class="mdi"><? include('assets/css/svg/admin_svg.php');?></i>Administration
                                 </a>
                                 <div class="dropdown-menu" aria-labelledby="topnav-more">
                                     <a href="administration_utilisateurs" class="dropdown-item">Utilisateurs</a>
@@ -115,7 +115,7 @@
                             <div class="page-title-right">
                                 <ol class="breadcrumb m-0">
                                     <li class="breadcrumb-item"><a href="javascript: void(0);">Cook Master</a></li>
-                                    <li class="breadcrumb-item active">Dashboard</li>
+                                    <li>→  Dashboard</li>
                                 </ol>
                             </div>
                             
